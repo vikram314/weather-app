@@ -1,1 +1,26 @@
-<h1>Weather App</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>🌤 Weather Pro</h1>
+
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button onclick="getWeatherByCity()">Search</button>
+      <button onclick="getWeatherByLocation()">📍 My Location</button>
+    </div>
+
+    <div id="currentWeather" class="card"></div>
+    <h2>5-Day Forecast</h2>
+    <div id="forecast" class="forecast-container"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
